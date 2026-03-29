@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perceptron L vs T</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Perceptron: Classify L vs T</h1>
+  <p>Draw an L or a T on the 5x5 grid, then classify it.</p>
+
+  <div id="grid"></div>
+
+  <div class="buttons">
+    <button onclick="clearGrid()">Clear</button>
+    <button onclick="trainModel()">Train Perceptron</button>
+    <button onclick="predictDrawing()">Predict</button>
+  </div>
+
+  <p id="status">Model not trained yet.</p>
+  <p id="prediction"></p>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
